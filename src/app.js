@@ -24,9 +24,9 @@ app.get('/notes', (req, res) => {
 })
 
 //DELETE/notes/:index(1)
-app.delete('/notes/:index', (req, res) => {
+app.delete('/notes/:id', (req, res) => {
 
-    const index = req.params.index // 1
+    const index = req.params.id // 1
 
     delete notes[index]
 
